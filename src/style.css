@@ -1,5 +1,8 @@
+.place{
+  text-align: justify;
+}
 body {
-  text-align: center;
+  text-align: justify;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -20,6 +23,16 @@ video {
   min-height: 50px;
   z-index: -100;
 }
+ul {
+  text-align: center;
+  list-style: none;
+  padding-top: 5px;
+}
+li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 2opx;
+}
 .main {
   background: white;
   max-width: 700px;
@@ -28,13 +41,13 @@ video {
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-ul {
-  list-style: none;
-  padding-top: 5px;
+.row-1{
+  display: inline-flex;
 }
-li {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 2opx;
+/*form styling*/
+#input-search{
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: inset;
 }
 
