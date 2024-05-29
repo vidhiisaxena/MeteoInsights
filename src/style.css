@@ -34,7 +34,8 @@ li {
   font-size: 2opx;
 }
 .main {
-  background: white;
+  background: white ;
+  opacity: 0.8;
   max-width: 700px;
   margin: 60px auto;
   padding: 30px;
