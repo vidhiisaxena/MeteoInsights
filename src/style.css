@@ -24,13 +24,14 @@ video {
   z-index: -100;
 }
 .city{
-  font-size: 36px;
+  font-size: 40px;
 }
 .country{
   font-size: 18px;
 }
 .place{
   display: inline-flexbox;
+  padding-left: 40px;
 }
 #days {
   text-align: center;
@@ -82,7 +83,7 @@ li {
   
 }
 #search{
-  padding-left: 150px;
+  padding-left: 170px;
   padding-top: 0px;
   position: absolute;
   align-self:flex-start;
@@ -101,4 +102,23 @@ li {
 #row-1
 .day-time{
   display: inline-block;
+}
+/*current temp tab styling*/
+.celsius{
+  font-size: 26px;
+}
+.temp{
+  font-size: 80px;
+  font-weight: 500;
+  text-align: right;
+}
+li .condtns
+{
+  padding-right: 60px;
+  font-size: 28px;
+}
+.currtemp{
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 0;
 }
