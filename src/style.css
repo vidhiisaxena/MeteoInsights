@@ -23,11 +23,12 @@ video {
   min-height: 50px;
   z-index: -100;
 }
+/*city and form tab styling*/
 .city{
-  font-size: 40px;
+  font-size: 60px;
 }
 .country{
-  font-size: 18px;
+  font-size: 28px;
 }
 .place{
   display: inline-flexbox;
@@ -83,8 +84,8 @@ li {
   
 }
 #search{
-  padding-left: 170px;
-  padding-top: 0px;
+  padding-left: 120px;
+  padding-top: 20px;
   position: absolute;
   align-self:flex-start;
 }
@@ -102,6 +103,10 @@ li {
 #row-1
 .day-time{
   display: inline-block;
+
+}
+.day-time{
+  font-size: 20px;
 }
 /*current temp tab styling*/
 .celsius{
@@ -119,6 +124,6 @@ li .condtns
 }
 .currtemp{
   text-align: right;
-  padding-left: 40px;
+  padding-left: 160px;
   padding-right: 0;
 }
