@@ -23,6 +23,7 @@ video {
   min-height: 50px;
   z-index: -100;
 }
+
 /*city and form tab styling*/
 .city{
   font-size: 60px;
@@ -43,6 +44,9 @@ video {
   list-style: none;
   padding-left: 0;
   display: inline-flex;
+}
+.row1{
+  padding-bottom: 0%;
 }
 .place {
   text-align: left;
@@ -70,6 +74,7 @@ li {
 .search-form .city {
   display: inline-flex;
 }
+
 /*form styling*/
 #input-search {
   border-radius: 5px;
@@ -81,11 +86,11 @@ li {
   background-color: #fff5fd;
   font-size: 16px;
   padding-left:5px ;
-  
 }
 #search{
-  padding-left: 120px;
+  padding-left: 100px;
   padding-top: 20px;
+  padding-bottom: 0px;
   position: absolute;
   align-self:flex-start;
 }
@@ -103,11 +108,12 @@ li {
 #row-1
 .day-time{
   display: inline-block;
-
+  padding-bottom: 0px;
 }
 .day-time{
   font-size: 20px;
 }
+
 /*current temp tab styling*/
 .celsius{
   font-size: 26px;
@@ -117,13 +123,126 @@ li {
   font-weight: 500;
   text-align: right;
 }
+.min-max
+.conditions{
+  font-size: 40px;
+}
 li .condtns
 {
   padding-right: 60px;
-  font-size: 28px;
+  font-size: 30px;
 }
 .currtemp{
   text-align: right;
   padding-left: 160px;
   padding-right: 0;
+  padding-top: 0px;
+}
+
+/*weather tab styling*/
+
+#day1
+{
+  width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day1:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+#day2{
+   width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day2:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+#day3{
+   width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day3:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+#day4{
+   width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day4:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+#day5{
+   width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day5:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+#day6{
+   width: 80px;
+  color: #fff;
+  border: 2px solid #783c70;
+  background-color: #783c70;
+  padding: 5px;
+  margin: 2px;
+}
+#day6:hover{
+  background-color: #b474ac;
+  border: #b474ac;
+  cursor:context-menu;
+}
+.Forecast-tab{
+  align-items: center;
+  padding-right: 30px;
+}
+
+/*Music Tab*/
+.Spotify{
+  text-align: center;
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.song{
+  font-family:"DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
 }
