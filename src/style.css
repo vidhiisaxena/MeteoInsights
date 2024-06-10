@@ -1,5 +1,6 @@
 .place {
   text-align: justify;
+
 }
 body {
   text-align: justify;
@@ -8,12 +9,14 @@ body {
   font-weight: 300;
   font-style: italic;
 }
-h1 {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: italic;
+.main {
+  background: white;
+  opacity: 0.8;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 video {
   position: fixed;
@@ -62,15 +65,6 @@ li {
   margin-right: 15px;
   font-size: 2opx;
 }
-.main {
-  background: white;
-  opacity: 0.8;
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-}
 .search-form .city {
   display: inline-flex;
 }
@@ -106,12 +100,15 @@ li {
   border-radius: 5px;
 }
 #row-1
-.day-time{
+#day-time{
   display: inline-block;
   padding-bottom: 0px;
 }
-.day-time{
-  font-size: 20px;
+#day-time{
+  text-align: left;
+  font-size: 17px;
+  padding-right: 20px;
+  position:absolute;
 }
 
 /*current temp tab styling*/
@@ -123,14 +120,13 @@ li {
   font-weight: 500;
   text-align: right;
 }
-.min-max
-.conditions{
-  font-size: 40px;
+#conditions{
+  font-size: 18px;
 }
-li .condtns
+#condtns
 {
-  padding-right: 60px;
-  font-size: 30px;
+  padding-right: 50px;
+  font-size: 18x;
 }
 .currtemp{
   text-align: right;
@@ -245,4 +241,6 @@ li .condtns
   font-family:"DM Serif Text", serif;
   font-weight: 400;
   font-style: italic;
+  text-align: center;
+  font-size: 24px;
 }

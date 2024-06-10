@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Weather App</h1>
+    <h6></h6>
     <video autoplay muted loop id="myVideo">
       <source
         src="src/images/4323285-hd_1920_1080_30fps.mp4"
@@ -33,7 +33,7 @@
         <ul id="row-1">
           <div class="place">
             <li>
-              <span class="city">Paris</span><span class="country">,FR</span><br/><span class="day-time" class="place">Tuesday 13:43</span>
+              <span class="city">Paris</span><span class="country">,FR</span><br/><span id="day-time" class="place" font-size="24px">Tuesday 13:43</span>
             </li>
           </div>
 
@@ -43,7 +43,7 @@
                 <input
                   type="search"
                   id="input-search"
-                  value="Enter a city.."
+                  placeholder="Enter a city.."
                   required
                   class="inp"
                 />
@@ -55,9 +55,9 @@
       </div>
       <div class="current-forecast">
         <ul id="current">
-        <li class="condtns">
-        <div class="min-max">Max 25°C| Min 15°C</div>
-        <div class="conditions">
+        <li id="condtns">
+        <div class="min-max" id="conditions">Max 25°C| Min 15°C</div>
+        <div class="conditions" id="conditions">
           Haze Humidity <strong>14%</strong><br/> Wind <strong>7.4 km/hr</strong>
         </div>
         </li>
@@ -113,5 +113,6 @@
       </p>
       <br />
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
