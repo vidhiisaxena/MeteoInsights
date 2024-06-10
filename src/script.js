@@ -22,4 +22,10 @@ let days = [
 let day = days[new Date().getDay()];
 let hour = new Date().getHours();
 let minute = new Date().getMinutes();
+if (minute < 10) {
+  minute = `0${minute}`;
+}
+if (hour < 10) {
+  hour = `0${hour}`;
+}
 time.innerHTML = `${day} ${hour}:${minute}`;
