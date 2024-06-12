@@ -50,6 +50,7 @@ video {
 }
 .row1{
   padding-bottom: 0%;
+  position:fixed;
 }
 .place {
   text-align: left;
@@ -79,7 +80,7 @@ li {
   color: #b474ac;
   background-color: #fff5fd;
   font-size: 16px;
-  padding-left:5px ;
+  padding-left:0px ;
 }
 #search{
   padding-left: 100px;
