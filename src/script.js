@@ -1,5 +1,6 @@
 function weatherforecast(response){
-  
+  let day1= document.querySelector(".day1");
+  console.log(response.data.list[3].dt_txt);
 }
 function displayTemperature(response){
   let tempElement = document.querySelector(".current-temperature");
