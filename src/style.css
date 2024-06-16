@@ -129,12 +129,16 @@ li {
   padding-right: 50px;
   font-size: 18x;
 }
+.current-temp-icon{
+  align-items: center;
+}
 .currtemp{
   text-align: right;
   padding-left: 160px;
   padding-right: 0;
   padding-top: 0px;
 }
+
 
 /*weather tab styling*/
 
