@@ -72,6 +72,9 @@ function weatherforecast(response) {
   let day1min=document.querySelector(".day1min");
   let day1Mi = Math.round((response.data.list[10].main.feels_like)-280);
   day1min.innerHTML=day1Mi;
+  let icon1=document.querySelector(".day1-icon");
+  let i1 = response.data.list[10].weather[0].icon;
+  icon1.innerHTML = `<img src= https://openweathermap.org/img/wn/${i1}@2x.png width="30px" height="30px">`;
 
   let day2 = document.querySelector(".day2");
   let date_2 = new Date(response.data.list[19].dt_txt);
@@ -83,6 +86,9 @@ function weatherforecast(response) {
   let day2min = document.querySelector(".day2min");
   let day2Mi = Math.round(response.data.list[19].main.feels_like - 280);
   day2min.innerHTML = day2Mi;
+  let icon2 = document.querySelector(".day2-icon");
+  let i2 = response.data.list[19].weather[0].icon;
+  icon2.innerHTML = `<img src= https://openweathermap.org/img/wn/${i2}@2x.png width="30px" height="30px">`;
 
   let day3 = document.querySelector(".day3");
   let date_3 = new Date(response.data.list[28].dt_txt);
@@ -94,6 +100,10 @@ function weatherforecast(response) {
   let day3min = document.querySelector(".day3min");
   let day3Mi = Math.round(response.data.list[28].main.feels_like - 280);
   day3min.innerHTML = day3Mi;
+  let icon3 = document.querySelector(".day3-icon");
+  let i3 = response.data.list[28].weather[0].icon;
+  icon3.innerHTML = `<img src= https://openweathermap.org/img/wn/${i3}@2x.png width="30px" height="30px">`;
+
 
   let day4 = document.querySelector(".day4");
   let date_4 = new Date(response.data.list[37].dt_txt);
@@ -103,8 +113,12 @@ function weatherforecast(response) {
   let day4Ma = Math.round(response.data.list[37].main.temp_max - 273);
   day4max.innerHTML = day4Ma;
   let day4min = document.querySelector(".day4min");
-  let day4Mi = Math.round(response.data.list[37].main.feels_like - 280);
+  let day4Mi = Math.round(response.data.list[37].main.feels_like - 279);
   day4min.innerHTML = day4Mi;
+  let icon4 = document.querySelector(".day4-icon");
+  let i4 = response.data.list[10].weather[0].icon;
+  icon4.innerHTML = `<img src= https://openweathermap.org/img/wn/${i4}@2x.png width="30px" height="30px">`;
+
 
   let day5 = document.querySelector(".day5");
   let date_5 = new Date(response.data.list[37].dt_txt);
@@ -114,8 +128,12 @@ function weatherforecast(response) {
   let day5Ma = Math.round(response.data.list[0].main.temp_max - 273);
   day5max.innerHTML = day5Ma;
   let day5min = document.querySelector(".day5min");
-  let day5Mi = Math.round(response.data.list[0].main.feels_like - 280);
+  let day5Mi = Math.round(response.data.list[0].main.feels_like - 279);
   day5min.innerHTML = day5Mi;
+  let icon5 = document.querySelector(".day5-icon");
+  let i5 = response.data.list[0].weather[0].icon;
+  icon5.innerHTML = `<img src= https://openweathermap.org/img/wn/${i5}@2x.png width="30px" height="30px">`;
+
 
   let day6 = document.querySelector(".day6");
   let date_6 = new Date(response.data.list[37].dt_txt);
@@ -124,9 +142,13 @@ function weatherforecast(response) {
   let day6max = document.querySelector(".day6max");
   let day6Ma = Math.round(response.data.list[10].main.temp_max - 273);
   day6max.innerHTML = day6Ma;
-    let day6min = document.querySelector(".day6min");
-    let day6Mi = Math.round(response.data.list[10].main.feels_like - 280);
-    day6min.innerHTML = day6Mi;
+  let day6min = document.querySelector(".day6min");
+  let day6Mi = Math.round(response.data.list[10].main.feels_like - 280);
+  day6min.innerHTML = day6Mi;
+  let icon6= document.querySelector(".day6-icon");
+  let i6 = response.data.list[10].weather[0].icon;
+  icon6.innerHTML = `<img src= https://openweathermap.org/img/wn/${i6}@2x.png width="30px" height="30px">`;
+
 }
 
 let forms = document.querySelector(".search-form");
