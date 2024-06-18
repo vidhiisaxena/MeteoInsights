@@ -28,18 +28,9 @@
         type="video/mp4"
       />
     </video>
-
     <div class="main">
-      <div class="row-1">
-        <ul id="row-1">
-          <div class="place">
-            <li>
-              <span class="city">Paris</span><span class="country">,FR</span><br/><span id="day-time" class="place" font-size="24px">Tuesday 13:43</span>
-            </li>
-          </div>
-
-          <li id="L1">
-            <span class="search-form">
+      <header>
+            <div class="search-form">
               <form id="search">
                 <input
                   type="search"
@@ -50,13 +41,18 @@
                 />
                 <input type="submit" id="input-submit" value="Search" />
               </form>
-            </span>
-          </li>
-        </ul>
-      </div>
+            </div>
+    </header>
+    <br>
+    <main>
+         <div class="place">
+        <span class="city">Paris</span><span class="country">,FR</span>
+        </div>
       <div class="current-forecast">
         <ul id="current">
         <li id="condtns">
+          <span id="day-time">Tuesday 13:43</span>
+          <br>
         <div class="min-max" id="conditions">Max <span class="max">25</span>°C| Min <span class="Min">15</span>°C</div>
         <div class="conditions" id="conditions">
           <i><strong><span class="cond">Haze</span></strong></i> Humidity <strong><span class="Humidity">14</span>%</strong><br/>Wind <strong><span class="wind"> 7.4</span>km/hr</strong>
@@ -114,6 +110,10 @@
       </p>
       <br />
     </div>
+  </main>
+  <footer>
+    Coded by <a hred="https://github.com/vidhiisaxena/">Vidhi Saxena</a> & hosted on <a>Vercel</a>
+  </footer>
     <script src="src/script.js"></script>
   </body>
 </html>

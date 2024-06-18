@@ -34,26 +34,17 @@ video {
 .country{
   font-size: 28px;
 }
-.place{
-  display: inline-flexbox;
-  padding-left: 40px;
-}
 #days {
   text-align: center;
   list-style: none;
   padding-top: 5px;
 }
-#row-1 {
-  list-style: none;
-  padding-left: 0;
-  display: inline-flex;
-}
-.row1{
-  padding-bottom: 0%;
-  position:fixed;
-}
+
 .place {
   text-align: left;
+  padding-left: 40px;
+  padding-top: 5px;
+  position: relative;
 }
 .temp{
   text-align: right;
@@ -66,50 +57,52 @@ li {
   margin-right: 15px;
   font-size: 2opx;
 }
-.search-form .city {
+.search-form  {
   display: inline-flex;
+  align-content: center;
 }
 
 /*form styling*/
 #input-search {
-  border-radius: 5px;
   font-family: "Raleway", sans-serif;
-  width: 250px;
-  height: 37px;
-  border-color: #783c70;
-  color: #b474ac;
-  background-color: #fff5fd;
+  border: #FFAB40;
+  color: #000;
+  background-color: #fff3e4;
   font-size: 16px;
-  padding-left:0px ;
+  font-size: 16px;
+  padding: 20px;
+  width: 500px;
+  height: 45px;
+  border-radius: 6px;
 }
 #search{
-  padding-left: 100px;
-  padding-top: 20px;
-  padding-bottom: 0px;
+  padding-left: 60px;
+  padding-top: 2px;
   position: absolute;
-  align-self:flex-start;
+  display:flex;
+  align-self: center;
+  padding-bottom: 5px;
 }
 #input-submit {
-  height: 37px;
+  line-height: 1;
+  border-radius: 5px;
+  height: 45px;
   width: 80px;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
-  background-color: #783c70;
+  background-color: #FFAB40;
   color: #fff;
+  border: #FFAB40;
   margin-left: 5px;
   font-size: 16px;
   border-radius: 5px;
 }
-#row-1
 #day-time{
   display: inline-block;
-  padding-bottom: 0px;
-}
-#day-time{
   text-align: left;
   font-size: 16px;
-  padding-right: 20px;
-  position:absolute;
+  color: gray;
+  position:relative;
 }
 
 /*current temp tab styling*/
@@ -127,7 +120,7 @@ li {
 #condtns
 {
   padding-right: 50px;
-  font-size: 18x;
+  font-size: 25px;
 }
 .current-temp-icon{
   align-items: center;
@@ -136,7 +129,6 @@ li {
   text-align: right;
   padding-left: 160px;
   padding-right: 0;
-  padding-top: 0px;
 }
 
 
@@ -146,79 +138,85 @@ li {
 {
   width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day1:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 #day2{
    width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day2:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 #day3{
    width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day3:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 #day4{
    width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day4:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 #day5{
    width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day5:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 #day6{
    width: 80px;
   color: #fff;
-  border: 2px solid #783c70;
-  background-color: #783c70;
+  border: 2px solid #FFAB40;
+  background-color: #FFAB40;
   padding: 5px;
   margin: 2px;
 }
 #day6:hover{
-  background-color: #b474ac;
-  border: #b474ac;
+  background-color: #FFDFB7;
+  border: #FFDFB7;
+  color: brown;
   cursor:context-menu;
 }
 .Forecast-tab{
