@@ -16,9 +16,9 @@ Type the name of the city you want to check the weather for into the search box.
 Press the "Search" button or hit Enter. The weather details for the entered city will be displayed.<br/>
 
 ## Code Structure
-index.html: The main HTML file that structures the webpage.<br/>
-style.css: The CSS file that contains the styling for the webpage.<br/>
-src.js: The JavaScript file that contains the logic for fetching and displaying weather data and real-time data, with background changing with weather.<br/>
+1. index.html: The main HTML file that structures the webpage.<br/>
+2. style.css: The CSS file that contains the styling for the webpage.<br/>
+3. src.js: The JavaScript file that contains the logic for fetching and displaying weather data and real-time data, with background changing with weather.<br/>
 
 ## Acknowlegdement 
 --> <a href="(https://openweathermap.org/)">Open Weather</a> for the Weather API to fetch real-time data.<br/>
