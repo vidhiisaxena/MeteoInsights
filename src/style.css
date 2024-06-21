@@ -1,6 +1,5 @@
 .place {
   text-align: justify;
-
 }
 body {
   text-align: justify;
@@ -18,20 +17,25 @@ body {
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-video {
-  position: fixed;
+.background-video {
+  position: absolute;
   top: 0;
   left: 0;
-  min-width: 50px;
-  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
   z-index: -100;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*city and form tab styling*/
-.city{
+.city {
   font-size: 60px;
 }
-.country{
+.country {
   font-size: 28px;
 }
 #days {
@@ -46,7 +50,7 @@ video {
   padding-top: 5px;
   position: relative;
 }
-.temp{
+.temp {
   text-align: right;
 }
 .current-forecast {
@@ -57,7 +61,7 @@ li {
   margin-right: 15px;
   font-size: 2opx;
 }
-.search-form  {
+.search-form {
   display: inline-flex;
   align-content: center;
 }
@@ -65,7 +69,7 @@ li {
 /*form styling*/
 #input-search {
   font-family: "Raleway", sans-serif;
-  border: #FFAB40;
+  border: #ffab40;
   color: #000;
   background-color: #fff3e4;
   font-size: 16px;
@@ -75,11 +79,11 @@ li {
   height: 45px;
   border-radius: 6px;
 }
-#search{
+#search {
   padding-left: 60px;
   padding-top: 2px;
   position: absolute;
-  display:flex;
+  display: flex;
   align-self: center;
   padding-bottom: 5px;
 }
@@ -90,145 +94,142 @@ li {
   width: 80px;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
-  background-color: #FFAB40;
+  background-color: #ffab40;
   color: #fff;
-  border: #FFAB40;
+  border: #ffab40;
   margin-left: 5px;
   font-size: 16px;
   border-radius: 5px;
 }
-#day-time{
+#day-time {
   display: inline-block;
   text-align: left;
   font-size: 16px;
   color: gray;
-  position:relative;
+  position: relative;
 }
 
 /*current temp tab styling*/
-.celsius{
+.celsius {
   font-size: 26px;
 }
-.temp{
+.temp {
   font-size: 80px;
   font-weight: 500;
   text-align: right;
 }
-#conditions{
+#conditions {
   font-size: 18px;
 }
-#condtns
-{
+#condtns {
   padding-right: 50px;
   font-size: 25px;
 }
-.current-temp-icon{
+.current-temp-icon {
   align-items: center;
 }
-.currtemp{
+.currtemp {
   text-align: right;
   padding-left: 160px;
   padding-right: 0;
 }
-.celsius{
+.celsius {
   font-size: 40px;
 }
 
-
 /*weather tab styling*/
 
-#day1
-{
+#day1 {
   width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day1:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day1:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-#day2{
-   width: 80px;
+#day2 {
+  width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day2:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day2:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-#day3{
-   width: 80px;
+#day3 {
+  width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day3:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day3:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-#day4{
-   width: 80px;
+#day4 {
+  width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day4:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day4:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-#day5{
-   width: 80px;
+#day5 {
+  width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day5:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day5:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-#day6{
-   width: 80px;
+#day6 {
+  width: 80px;
   color: #fff;
-  border: 2px solid #FFAB40;
-  background-color: #FFAB40;
+  border: 2px solid #ffab40;
+  background-color: #ffab40;
   padding: 5px;
   margin: 2px;
 }
-#day6:hover{
-  background-color: #FFDFB7;
-  border: #FFDFB7;
+#day6:hover {
+  background-color: #ffdfb7;
+  border: #ffdfb7;
   color: brown;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-.Forecast-tab{
+.Forecast-tab {
   align-items: center;
   padding-right: 30px;
 }
 
 /*Music Tab*/
-.Spotify{
+.Spotify {
   text-align: center;
 }
 .dm-serif-text-regular {
@@ -243,10 +244,14 @@ li {
   font-style: italic;
 }
 
-.song{
-  font-family:"DM Serif Text", serif;
+.song {
+  font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: italic;
   text-align: center;
   font-size: 24px;
+}
+footer{
+  text-align: center;
+  font-size: 12px;
 }

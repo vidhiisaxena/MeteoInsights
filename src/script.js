@@ -21,19 +21,6 @@ function displayTemperature(response) {
   let conds = response.data.weather[0].main;
   let video=document.querySelector("#myVideo");
   conditions.innerHTML = conds;
-  if (conds === "Rain") {
-    video ="url('')";
-  } else if (conds === "Clouds") {
-    video= "url(cloud.gif)";
-  } else if (conds === "Clear") {
-    video =
-      "url('https://media.istockphoto.com/id/962500712/video/4k-tl-cloudy-sky-with-sun-rays.mp4?s=mp4-640x640-is&k=20&c=nPPwovJCYRu0T7Hbz2K38ut6QOLZjIEcQJS2ZqqQoVA=')";
-  } else if (conds === "Haze") {
-    video =
-      "url('https://live.staticflickr.com/7192/6814624698_2a45c14996_n.jpg')";
-  } else {
-    video = "url(background.gif)";
-  }
   let icon = document.querySelector(".current-temp-icon");
   let icons = response.data.weather[0].icon;
   icon.innerHTML = `<img src= https://openweathermap.org/img/wn/${icons}@2x.png width="94px" height="94px">`;
@@ -49,6 +36,44 @@ function search(event) {
   const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`;
   axios.get(api).then(displayTemperature);
   axios.get(api).then(forecast);
+  const videoElement = document.querySelector("#background-video");
+  axios.get(api).then((response) => {const weather = response.data.weather[0].main.toLowerCase();
+    let videoSrc;
+    let condi=response.data.weather[0].description;
+       switch (weather) {
+         case "clear":
+           videoSrc = "src/images/clear.mp4";
+           break;
+         case "haze":
+           videoSrc = "src/images/Haze.mp4";
+           break;
+         case "clouds":
+          if (condi=== "overcast clouds"){
+            videoSrc="src/images/overcast.mp4";}
+          else if (condi=== "broken clouds"){
+            videoSrc="src/images/broken.mp4";
+          }else{
+           videoSrc = "src/images/clouds.mp4";}
+           break;
+         case "rain":
+           videoSrc = "src/images/Rain.mp4";
+           break;
+         case "snow":
+           videoSrc = "src/images/thunder.mp4";
+           break;
+         case "thunderstorm":
+           videoSrc = "src/images/snow.mp4";
+           break;
+         default:
+           videoSrc = "src/images/default.mp4";
+           break;
+       }
+        videoElement.src = videoSrc;
+      })
+      .catch((error) => {
+        console.error("Error fetching the weather data", error);
+        videoElement.src = "videos/default.mp4";
+      });
 }
 let long;
 let lat;
@@ -188,19 +213,3 @@ if (hour < 10) {
 }
 time.innerHTML = `${day} ${hour}:${minute}`;
 
-
-function backgroundChange(weather) {
-  if (weather === "Rain") {
-    document.body.style.backgroundVideo =
-      "url('src/images/4323285-hd_1920_1080_30fps.mp4')";
-  } else if (weather === "Clouds") {
-    document.body.style.backgroundImage = "url(cloud.gif)";
-  } else if (weather === "Clear") {
-    document.body.style.backgroundImage = "url('https://i...')";
-  } else if (weather === "Haze") {
-    document.body.style.backgroundImage =
-      "url('https://live.staticflickr.com/7192/6814624698_2a45c14996_n.jpg')";
-  } else {
-    document.body.style.backgroundImage = "url(background.gif)";
-  }
-}
