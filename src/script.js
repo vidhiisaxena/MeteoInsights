@@ -19,7 +19,21 @@ function displayTemperature(response) {
   min.innerHTML = Min;
   let conditions = document.querySelector(".cond");
   let conds = response.data.weather[0].main;
+  let video=document.querySelector("#myVideo");
   conditions.innerHTML = conds;
+  if (conds === "Rain") {
+    video ="url('')";
+  } else if (conds === "Clouds") {
+    video= "url(cloud.gif)";
+  } else if (conds === "Clear") {
+    video =
+      "url('https://media.istockphoto.com/id/962500712/video/4k-tl-cloudy-sky-with-sun-rays.mp4?s=mp4-640x640-is&k=20&c=nPPwovJCYRu0T7Hbz2K38ut6QOLZjIEcQJS2ZqqQoVA=')";
+  } else if (conds === "Haze") {
+    video =
+      "url('https://live.staticflickr.com/7192/6814624698_2a45c14996_n.jpg')";
+  } else {
+    video = "url(background.gif)";
+  }
   let icon = document.querySelector(".current-temp-icon");
   let icons = response.data.weather[0].icon;
   icon.innerHTML = `<img src= https://openweathermap.org/img/wn/${icons}@2x.png width="94px" height="94px">`;
@@ -148,8 +162,7 @@ function weatherforecast(response) {
   let icon6= document.querySelector(".day6-icon");
   let i6 = response.data.list[10].weather[0].icon;
   icon6.innerHTML = `<img src= https://openweathermap.org/img/wn/${i6}@2x.png width="30px" height="30px">`;
-
-}
+  }
 
 let forms = document.querySelector(".search-form");
 forms.addEventListener("submit", search);
@@ -174,3 +187,20 @@ if (hour < 10) {
   hour = `0${hour}`;
 }
 time.innerHTML = `${day} ${hour}:${minute}`;
+
+
+function backgroundChange(weather) {
+  if (weather === "Rain") {
+    document.body.style.backgroundVideo =
+      "url('src/images/4323285-hd_1920_1080_30fps.mp4')";
+  } else if (weather === "Clouds") {
+    document.body.style.backgroundImage = "url(cloud.gif)";
+  } else if (weather === "Clear") {
+    document.body.style.backgroundImage = "url('https://i...')";
+  } else if (weather === "Haze") {
+    document.body.style.backgroundImage =
+      "url('https://live.staticflickr.com/7192/6814624698_2a45c14996_n.jpg')";
+  } else {
+    document.body.style.backgroundImage = "url(background.gif)";
+  }
+}
