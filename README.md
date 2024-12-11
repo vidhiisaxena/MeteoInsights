@@ -8,6 +8,8 @@ Welcome to the MeteoInsights Website! This project is a simple yet powerful web 
 
  ## Deployed Website
 You can access the live demo of the website <a href="https://meteo-insight.vercel.app/">here</a>.
+![MeteoInsight](https://github.com/user-attachments/assets/851a3d37-f27a-43ef-9559-f8f637d967b3)
+
 ## Usage
 1. <strong>Enter a City Name:</strong><br/>
 Type the name of the city you want to check the weather for into the search box.<br/>
