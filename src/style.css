@@ -19,11 +19,12 @@ body {
   padding: 0;
 }
 .main {
-  max-width: 640px;
+  max-width: 90vw;
   width: 90%; 
-  margin: 5vh auto;
-  padding: 28px 24px;
+  margin: 2rem auto;
+  padding: 1 rem 0;
   border-radius: 12px;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
