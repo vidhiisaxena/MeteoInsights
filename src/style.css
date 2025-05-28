@@ -19,12 +19,12 @@ body {
   padding: 0;
 }
 .main {
-  background: white;
-  opacity: 0.7;
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 10px;
+  max-width: 640px;
+  width: 90%; 
+  margin: 5vh auto;
+  padding: 28px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 .background-video {
@@ -36,6 +36,7 @@ body {
   height: 100%; 
   z-index: -1; 
   object-fit: cover;
+  inset:0;
 }
 video {
   width: 100%;
@@ -78,6 +79,13 @@ li {
   display: inline-flex;
   align-content: center;
 }
+.search-form form{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20x;
+} 
 
 /*form styling*/
 #input-search {
@@ -85,12 +93,12 @@ li {
   border: #ffab40;
   color: #000;
   background-color: #fff3e4;
-  font-size: 16px;
-  font-size: 16px;
-  padding: 20px;
-  width: 500px;
-  height: 45px;
+  font-size: 1rem;
+  padding: 0 14px;
+  min-width: 0;
+  height: 44px;
   border-radius: 6px;
+  flex: 1 1 auto;
 }
 #search {
   padding-left: 60px;
@@ -103,8 +111,8 @@ li {
 #input-submit {
   line-height: 1;
   border-radius: 5px;
-  height: 45px;
-  width: 80px;
+  height: 44px;
+  width: 90px;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
   background-color: #ffab40;
@@ -127,7 +135,7 @@ li {
   font-size: 26px;
 }
 .temp {
-  font-size: 80px;
+  font-size: clamp(48px, 18vw, 84px);
   font-weight: 500;
   text-align: right;
 }
@@ -143,14 +151,39 @@ li {
 }
 .currtemp {
   text-align: right;
-  padding-left: 160px;
+  padding-left: 0px;
   padding-right: 0;
-}
+  flex: 0 0 auto;}
 .celsius {
   font-size: 40px;
 }
 
 /*weather tab styling*/
+#days {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 6px;
+  padding: 0;
+  margin: 8px 0 0;
+  list-style: none;
+}
+
+#days li {
+  margin: 0;              /* override your old margin-right */
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 2px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+}
+#days li:hover {
+  background: #ffdfb7;
+  border-color: #ffdfb7;
+  color: brown;
+  cursor: default;
+}
 
 #day1 {
   width: 80px;
@@ -240,8 +273,11 @@ li {
   align-items: center;
   padding-right: 30px;
 }
-
-/*Music Tab*/
+[id^="day"]-icon,
+[id^="day"]-maxmin {
+  display: block;
+}
+/* ----------  music tab  ---------- */
 .Spotify {
   text-align: center;
 }
