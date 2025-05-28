@@ -97,7 +97,7 @@ li {
   font-size: 1rem;
   padding: 0 14px;
   min-width: 0;
-  height: 44px;
+  height: 40px;
   border-radius: 6px;
   flex: 1 1 auto;
   display: inline-block;
@@ -237,6 +237,24 @@ footer{
   --accent: #ffab40;
 }
 
+@media (min-width: 768px) and (max-width: 1145px) {
+  .main {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .search-form form{
+    width: 50% !important;
+  }
+}
+@media (min-width: 1145px) and (max-width: 1390px) {
+  .main {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .search-form form{
+    width: 40% !important;
+  }
+}
 @media (max-width: 768px) {
   .main {
     margin: 20px;
@@ -263,4 +281,6 @@ footer{
   .country  { font-size: 18px; }
   .temp     { font-size: clamp(42px, 20vw, 72px); }
   .main{box-sizing: border-box;}
+  .search-form form{width:70%}
+  
 }
