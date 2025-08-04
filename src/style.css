@@ -166,27 +166,24 @@ li {
 #days {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  gap: 6px;
+  gap: 8px;
   padding: 0;
   margin: 8px 0 0;
   list-style: none;
 }
 
 #days li {
-  margin: 0;              /* override your old margin-right */
+  font-size: 0.9rem;
   padding: 6px 4px;
   text-align: center;
-  font-size: 0.9rem;
-  border: 2px solid var(--accent);
-  background: var(--accent);
-  color: #fff;
   border-radius: 4px;
-  width: 80px;
-  color: #fff;
-  border: 2px solid #ffab40;
   background-color: #ffab40;
-  padding: 5px;
-  margin: 2px;
+  border: 2px solid #ffab40;
+  color: #fff;
+  width: 100%;
+  min-width: 70px;
+  max-width: 100%;
+  margin: 0; /* optional */
 }
 #days li:hover {
   background: #ffdfb7;
